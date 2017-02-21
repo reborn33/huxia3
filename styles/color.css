@@ -1,0 +1,83 @@
+body{
+    color: #7FFFD4;
+    background-color: #334;
+}
+a:link{
+    color: #445;
+    background-color: #eb6;
+
+}
+a:hover{
+    color: #667;
+    background-color: #fb5;
+}
+a:active{
+    color: #778;
+    background-color: #ec8;
+}
+header{
+    color: #ec8;
+    background-color: #334;
+    border-color: #667;
+}
+header nav{
+    color: #455;
+    background-color: #789;
+    border-color: #667;
+}
+article{
+    color: #223;
+    background-color: #edc;
+    border-color: #667;
+}
+header nav ul{
+    border-color: #99a;
+}
+
+header nav a:link,header nav a:visited{
+    color: #eef;
+    background-color: transparent;
+    border-color: #99a;
+}
+
+header nav a:hover{
+    color: #445;
+    background-color: #eb6;
+}
+
+header nav a:active{
+    color: #667;
+    background-color: #ec8;
+}
+article img{
+    border-color: #ba9;
+    outline-color: #dcb;
+}
+#imagegallery a{
+    background-color: transparent;
+}
+header nav a.here:link,
+header nav a.here:visited,
+header nav a.here:hover,
+header nav a.here:active{
+    color: #eef;
+    background-color: #CDCD00;
+}
+table{
+    margin: auto;
+    border: 1px solid #699;
+}
+
+th{
+    font-weight: normal;
+    font-style: italic;
+    text-align: left;
+    border:1px dotted #699;
+    background-color: #9cc;
+    color: #000;
+}
+th td{
+    width: 10em;
+    padding: .5em;
+}
+
