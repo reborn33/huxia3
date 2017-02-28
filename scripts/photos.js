@@ -2,8 +2,8 @@
  * Created by hu on 2016/9/26.
  */
 $(function () {
- $("img").fadeTo("slow", 0.5);
-$("img").hover(function(){
+ $("#imagegallery img").fadeTo("slow", 0.5);
+$("#imagegallery img").hover(function(){
  $(this).fadeTo("slow", 1.0); // 设置透明度为100%
 },function(){
  $(this).fadeTo("slow", 0.5); // 设置不透明度mouseout回到50%
