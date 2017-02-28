@@ -8,6 +8,18 @@
     <link rel="stylesheet" media="screen" href="styles/layout.css">
     <link rel="stylesheet" media="screen" href="styles/typopraphy.css">
 </head>
+    <script type="text/javascript"src="http://fuck.thinksaas.cn/get/http://code.jquery.com/jquery-latest.js"></script>
+<script>
+ $(function () {
+ $("#imagegallery img").fadeTo("slow", 0.5);
+$("#imagegallery  img").hover(function(){
+ $(this).fadeTo("slow", 1.0); // 设置透明度为100%
+},function(){
+ $(this).fadeTo("slow", 0.5); // 设置不透明度mouseout回到50%
+});
+});
+
+</script>
 <body>
 <header>
     <img src="images/logo.png" alt="The  Growth of  Hu  Yuxuan  Baby">
