@@ -86,8 +86,8 @@ article img{
 #imagegallery li{
     display: inline;
 }
-#imagegallery a:hover img{
-    filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;
+<!--#imagegallery a:hover img{
+   // filter:alpha(Opacity=80);-moz-opacity:0.8;opacity: 0.8;-->
 th{
     padding: .5em 3em;
 }
