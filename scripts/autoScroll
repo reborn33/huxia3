@@ -1,0 +1,44 @@
+#carouselInner{
+float:left;
+width:510px;
+overflow:hidden;
+background:#000;
+}
+#carouselUI{
+position:relative;
+list-style-type:none;
+left:-340px;
+}
+
+//添加自动滚动
+function  autoCarousel(){
+var itemwidth=$('#carouselUI li').outerWidth()+10;
+var moveFactor=parseInt($('#carouselUI').css('left'))-itemwidth;
+$('#carouselUI').animate({'left':moveFactor},'slow','linear',function(){
+$('#carouselUI li:last').after($('#carouselUI li:first'));
+$('#carouselUI').css({'left':"-340px"});
+});
+});
+
+moveCarousel=setInterval(autoCarousel,2000);
+
+//手动控制滚动
+$('#scrollRight').clock(function(){
+var moveFactor=$('#carouselUI li').outerWidth()+10;
+var moveFactor=parseInt($('#carouselUI').css('left'))-itemwidth;
+$('#carouselUI').animate({'left':moveFactor},'slow','linear',function(){
+$('#carouselUI li:last').after($('#carouselUI li:first'));
+$('#carouselUI').css({'left':"-340px"});
+});
+});
+
+
+$('#scrollLeft').clock(function(){
+var moveFactor=$('#carouselUI li').outerWidth()+10;
+var moveFactor=parseInt($('#carouselUI').css('left'))+itemwidth;
+$('#carouselUI').animate({'left':moveFactor},'slow','linear',function(){
+$('#carouselUI li:first').before($('#carouselUI li:last'));
+$('#carouselUI').css({'left':"-340px"});
+});
+});
+
